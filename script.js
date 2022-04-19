@@ -17,7 +17,8 @@ function game() {
     progressEl.textContent = "";
 
     for (let index = 0; index < 3; index++) {
-        progressEl.textContent += `Round ${index + 1}:` + PlayRound(prompt(`${gameOptions.join(', ')}? Edit change to the default.`, GetRandomCard()), GetRandomCard()) + '\n';
+        progressEl.textContent += `Round ${index + 1}:` 
+        + PlayRound(getPlayerInput(), GetRandomCard()) + '\n';
     }
 
     //results
@@ -28,6 +29,10 @@ function game() {
         return `You Lose! Computer takes the Crown this time. ${computer} vs ${player}`;
     }
     return `You Won! You beat the Computer. ${player} vs ${computer}`;
+}
+
+function getPlayerInput() {
+    return prompt(`${gameOptions.join(', ')}? Edit change to the default.`, GetRandomCard());
 }
 
 function GetRandomCard() {
