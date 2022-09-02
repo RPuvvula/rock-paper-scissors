@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Rock Paper Scissors</title>
     <script defer src="/script.js"></script>
 </head>
 
 <body>
-    <div>
-        <textarea style="display: block;" name="progress" id="results" cols="30" rows="10">Play a game of 5</textarea>
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-        <p id="scores">Scores:</p>
+    <div class="main-container">
+        <div>
+            <h3>Will you win?</h3>
+        </div>
+        <div>
+            <form><button formaction="./game.html">Play, Rock Paper Scissors</button></form>
+        </div>
+        <div>
+            <h3>Will you lose?</h3>
+        </div>
     </div>
 </body>
 
