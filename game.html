@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/game.css">
     <title>Rock Paper Scissors</title>
     <script defer src="/script.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="game-container">
         <textarea style="display: block;" name="progress" id="results" cols="30" rows="10">Play a game of 5</textarea>
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <div class="game-actions">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
         <p id="scores">Scores:</p>
     </div>
 </body>

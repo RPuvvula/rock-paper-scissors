@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.game-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.game-actions {
+    display: flex;
+    gap: .5rem;
+}
