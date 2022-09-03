@@ -4,7 +4,8 @@ const progressEl = document.getElementById("progress-el");
 const rockEl = document.getElementById('rock');
 const paperEl = document.getElementById('paper');
 const scissorsEl = document.getElementById('scissors');
-const resultsEl = document.getElementById('results');
+const computerEl = document.getElementById('computer');
+const roundEl = document.getElementById('round');
 
 
 rockEl.addEventListener('click', (e) => {
@@ -25,28 +26,27 @@ let player = 0;
 let computer = 0;
 function letsGame(userSelection) {
     const results = PlayRound(userSelection, GetRandomCard());
-    resultsEl.textContent += ('\n' + results);
+    roundEl.textContent = `Round ${player + computer}`;
+
+    computerEl.textContent = (results);
     scoreEl.textContent = ('Scores: Computer: ' + computer + ' You: ' + player);
 
     //results
     if (player >= totalToWin || computer >= totalToWin) {
         if (player === computer) {
-            resultsEl.textContent += '\n' + `You are both equals! ${computer} each.`;
+            computerEl.textContent = `You are both equals! ${computer} each.`;
         }
         else if (computer > player) {
-            resultsEl.textContent += '\n' + `You Lose! Computer takes the Crown this time. ${computer} vs ${player}`;
+            computerEl.textContent = `You Lose! Computer takes the Crown this time. ${computer} vs ${player}`;
         }
         else {
-            resultsEl.textContent += '\n' + `You Won! You beat the Computer. ${player} vs ${computer}`;
+            computerEl.textContent = `You Won! You beat the Computer. ${player} vs ${computer}`;
         }
         //reset counters
         player = 0;
         computer = 0;
+        roundEl.textContent = 'Play a game of 5, again?'
     }
-}
-
-function getPlayerInput() {
-    return prompt(`${gameOptions.join(', ')}? Edit change to the default.`, GetRandomCard());
 }
 
 function GetRandomCard() {
