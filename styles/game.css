@@ -1,5 +1,11 @@
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/game-question.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .game-container {
@@ -13,8 +19,8 @@ body {
     "."
     "."
     ".";
-    justify-items: center;
-    align-items: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .game-actions {
@@ -22,18 +28,20 @@ body {
   gap: 0.5rem;
 }
 
-div p, div button {
-    font-size: 2rem;
+div p,
+div button {
+  font-size: 2rem;
 }
 
 div button {
-    font-size: 2rem;
-    padding: .5rem;
-    text-transform: uppercase;
-    border-radius: 8px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 8px;
 }
 
-#round, #scores {
-    font-family: 'Caveat', sans-serif;
-    font-weight: 300;
+#round,
+#scores {
+  font-family: "Caveat", sans-serif;
+  font-weight: 300;
 }
