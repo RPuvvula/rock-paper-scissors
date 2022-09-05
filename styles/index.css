@@ -19,9 +19,10 @@ background-attachment: fixed;
 }
 
 .main-container h3 {
-  font-family: "Caveat", cursive, sans-serif;
+  font-family: "Caveat", sans-serif;
   font-size: 2rem;
-  /* color: rgb(207, 220, 23); */
+  font-weight: 600;
+  color: #665500;
 }
 
 .main-toprow {
