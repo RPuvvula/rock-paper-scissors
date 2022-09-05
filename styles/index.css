@@ -5,9 +5,8 @@
 body {
 display: flex;
 justify-content: center;
-background-image: url('../images/question-mark.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+background-image: url('../images/background-image.jpg');
+background-attachment: fixed;
 }
 
 .main-container {
@@ -22,15 +21,17 @@ background-size: cover;
 .main-container h3 {
   font-family: "Caveat", cursive, sans-serif;
   font-size: 2rem;
-  color: rgb(207, 220, 23);
+  /* color: rgb(207, 220, 23); */
 }
 
 .main-toprow {
   border-bottom: 1px solid var(--zinc-600);
   align-self: flex-start;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+}
+
+.main-bottomrow {
+  border-bottom: 1px solid var(--zinc-600);
+  align-self: flex-end;
 }
 
 .play-button {

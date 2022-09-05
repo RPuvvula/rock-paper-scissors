@@ -2,10 +2,8 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  background-image: url("../images/game-question.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-image: url('../images/background-image.jpg');
+  background-attachment: fixed;
 }
 
 .game-container {
